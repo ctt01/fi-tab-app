@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Grupo Simetría</string>
+    <string name="punto_de_fichaje">Punto de fichaje</string>
+    <string name="intro_cod">Número de control</string>
+    <string name="validar">Validar</string>
+    <string name="codigo_blank">Debe introducir el código.</string>
+    <string name="codigo_err">El código debe tener 4 dígitos.</string>
+    <string name="codigo_invalido">El código debe tener 3 dígitos.</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Constraseña</string>
+    <string name="fichar">Fichar</string>
+    <string name="salir">Salir</string>
+    <string name="gps_deshabilitado">La localización en su dispositivo está deshabilitada, ¿Quiere habilitarla?</string>
+    <string name="fallo_operacion">La operación no se pudo realizar.</string>
+    <string name="no_network">Compruebe la conexión a internet e inténtelo de nuevo.</string>
+    <string name="fichaje_ok">Fichaje registrado correctamente</string>
+    <string name="fichaje_ko">Fichaje cancelado</string>
+    <string name="intro_cod_disp">Introduzca código de dispositivo</string>
+    <string name="cod_disp">Código dispositivo</string>
+    <string name="introduzca_codigo">Introduzca el código de usuario</string>
+    <string name="ubicacion_desconocida">No se ha podido obtener la ubicación del dispositivo</string>
+</resources>
