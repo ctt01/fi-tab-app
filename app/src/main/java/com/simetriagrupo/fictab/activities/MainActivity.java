@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar loader;
     private FicTab ficTab;
     private int finishTime = 15; //15 secs
-
+    Handler handler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 loader.setVisibility(View.VISIBLE);
-//                fichar();
+                handler.removeCallbacksAndMessages(null);
                 clickImage();
             }
         });
@@ -102,6 +102,7 @@ public class MainActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+                handler.removeCallbacksAndMessages(null);
                 Intent intent = new Intent(MainActivity.this, FailActivity.class);
                 intent.putExtra("nombre", nombre);
                 startActivity(intent);
@@ -123,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
             setupSurfaceHolder();
         }
 
-        Handler handler = new Handler();
+        handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
                 MediaPlayer.create(getApplicationContext(), R.raw.fich_nok).start();
